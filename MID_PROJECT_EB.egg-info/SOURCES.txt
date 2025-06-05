@@ -1,0 +1,6 @@
+setup.py
+MID_PROJECT_EB.egg-info/PKG-INFO
+MID_PROJECT_EB.egg-info/SOURCES.txt
+MID_PROJECT_EB.egg-info/dependency_links.txt
+MID_PROJECT_EB.egg-info/requires.txt
+MID_PROJECT_EB.egg-info/top_level.txt
