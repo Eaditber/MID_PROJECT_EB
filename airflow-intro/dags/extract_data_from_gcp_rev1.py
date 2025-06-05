@@ -13,10 +13,10 @@ from datetime import timedelta
 #### TRANSFORM STEP....
 def load_to_sql(file_path):
     conn = BaseHook.get_connection('postgres_default')  
-    engine = sqlalchemy.create_engine(f"postgresql+psycopg2://{conn.login}:{conn.password}@postgres:{conn.port}/{conn.schema}")
+    engine = sqlalchemy.create_engine(f"postgresql+psycopg2://{conn.login}:{conn.password}@airflow-intro-postgres-1:{conn.port}/{conn.schema}")
 
     df = pd.read_csv(file_path)
-    df.to_sql(name="customers_data", con=engine, if_exists="replace", index=False)
+    df.to_sql(name="customers_data", con=engine, if_exists="replace", index=False) # name="customers_data" table name
 
 # Define the DAG
 with DAG(
@@ -47,4 +47,3 @@ with DAG(
     )
 
     list_files >> download_file >> load_data
-#C:\Users\eaditb\Documents\MID_PROJECT_EB\airflow-intro\dags\extract_data_from_gcp_rev1.py
