@@ -7,3 +7,5 @@ imbalanced-learn
 lightgbm
 mlflow
 flask
+setuptools
+psycopg2

@@ -11,5 +11,7 @@ Requires-Dist: imbalanced-learn
 Requires-Dist: lightgbm
 Requires-Dist: mlflow
 Requires-Dist: flask
+Requires-Dist: setuptools
+Requires-Dist: psycopg2
 Dynamic: author
 Dynamic: requires-dist
